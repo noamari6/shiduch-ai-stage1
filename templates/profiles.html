@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>שידוך AI - כרטיסים</title>
+</head>
+<body>
+    <h1>כרטיסים שהתקבלו</h1>
+    {% if profiles %}
+        <ul>
+            {% for profile in profiles %}
+                <li>
+                    <strong>שם:</strong> {{ profile.full_name }}<br>
+                    <strong>גיל:</strong> {{ profile.age }}<br>
+                    <strong>עיר:</strong> {{ profile.city }}<br>
+                    <strong>על עצמי:</strong> {{ profile.about }}<br><br>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>אין עדיין כרטיסים להצגה.</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>יצירת כרטיס - שידוך AI</title>
+</head>
+<body>
+    <h2>צור כרטיס</h2>
+    <form method="post" enctype="multipart/form-data">
+        שם מלא: <input type="text" name="name" required><br><br>
+        גיל: <input type="number" name="age" required><br><br>
+        עיר: <input type="text" name="city" required><br><br>
+        תיאור עצמי: <br>
+        <textarea name="description" rows="4" cols="40" required></textarea><br><br>
+        תמונה: <input type="file" name="image" accept="image/*" required><br><br>
+        <input type="submit" value="שלח">
+    </form>
+</body>
+</html>

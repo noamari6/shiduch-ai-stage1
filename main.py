@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-import os  # צריך בשביל לקרוא את משתנה הסביבה PORT
+import os
 
 app = Flask(__name__)
 
@@ -12,4 +12,17 @@ def form():
         age = request.form["age"]
         city = request.form["city"]
         religious_level = request.form["religious_level"]
-        about =
+        about = request.form["about"]
+
+        profile = {
+            "full_name": full_name,
+            "age": age,
+            "city": city,
+            "religious_level": religious_level,
+            "about": about
+        }
+
+        profiles.append(profile)
+        return render_template("profiles.html", profiles=profiles)
+
+    return render_template

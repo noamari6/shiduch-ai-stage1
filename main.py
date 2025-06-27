@@ -25,4 +25,7 @@ def form():
         profiles.append(profile)
         return render_template("profiles.html", profiles=profiles)
 
-    return render_template
+    return render_template("form.html")
+
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))

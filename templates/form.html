@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>שידוך AI - טופס</title>
+</head>
+<body>
+    <h1>טופס יצירת כרטיס</h1>
+    <form action="/submit" method="post">
+        <label for="full_name">שם מלא:</label>
+        <input type="text" id="full_name" name="full_name" required><br><br>
+
+        <label for="age">גיל:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="city">עיר:</label>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <label for="about">על עצמי:</label><br>
+        <textarea id="about" name="about" rows="5" cols="40" required></textarea><br><br>
+
+        <input type="submit" value="שליחה">
+    </form>
+</body>
+</html>
